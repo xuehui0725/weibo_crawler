@@ -8,7 +8,8 @@
 import scrapy
 
 
-class WeiboCrawlerItem(scrapy.Item):
+class WeiboItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    dateTime = scrapy.Field()
+    text = scrapy.Field()
