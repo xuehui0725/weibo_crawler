@@ -11,5 +11,10 @@ import scrapy
 class WeiboItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    dateTime = scrapy.Field()
-    text = scrapy.Field()
+    postTime = scrapy.Field()
+    blogText = scrapy.Field()
+
+class FanItem(scrapy.Item):
+    id = scrapy.Field()
+    name = scrapy.Field()
+    blog_count = scrapy.Field()

@@ -29,8 +29,8 @@ class WeiboSpider(scrapy.Spider):
         for weibo_item in weibo_cards:
             item = WeiboItem()
             weiboContent = weibo_item["mblog"]
-            item["dateTime"] = weiboContent["created_at"]
-            item["text"] = weiboContent["text"]
+            item["postTime"] = weiboContent["created_at"]
+            item["blogText"] = weiboContent["text"]
             # print "dateTime:", item["dateTime"]
             # print "text:", item["text"]
             yield item
